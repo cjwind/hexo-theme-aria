@@ -59,6 +59,7 @@
     <main class="post-main" itemprop="articleBody">
       {% if post.excerpt  %}
       {{ post.excerpt }}
+      <a href="{{ url_for(post.path) }}">(More...)</a>
       {% elif post.description %}
       {{ post.description }}
       {% elif theme.auto_excerpt %}
